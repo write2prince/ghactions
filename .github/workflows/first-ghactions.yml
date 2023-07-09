@@ -1,0 +1,9 @@
+name: First GH Action File 
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo of Arrays
+        run: echo "Echo of Arrays ...."
