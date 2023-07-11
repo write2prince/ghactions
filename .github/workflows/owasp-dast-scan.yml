@@ -1,6 +1,6 @@
 name: OWASP ZAP Integration with GitHub Actions
 
-on: [push, fork]
+on: [push]
 
 jobs:
   zap_scan:
@@ -8,7 +8,7 @@ jobs:
     name: Scan the web apps / URL
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: master
       - name: ZAP Scan

@@ -1,5 +1,5 @@
 name: First GH Action File 
-on: [push]
+on: [push, pull]
 
 jobs:
   run-shell-command:
