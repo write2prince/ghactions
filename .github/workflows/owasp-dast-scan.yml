@@ -8,10 +8,9 @@ jobs:
     name: Scan the web apps / URL
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
-          fetch-depth: 2
-      - run: git checkout HEAD^
+          ref: master
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
         with:
