@@ -18,6 +18,6 @@ jobs:
         uses: zaproxy/action-baseline@v0.6.1
         with:
           docker_name: 'owasp/zap2docker-stable'
-          target: 'https://ea255871trial.launchpad.cfapps.us10.hana.ondemand.com/ee9e9870-5fd1-4fac-b9a4-fec7cb24d278.tacpui.tacpui-1.0.10/index.html'
+          target: 'https://ea255871trial-dev-tacp-contracts-approuter.cfapps.us10-001.hana.ondemand.com/tacp-ui/index.html'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
