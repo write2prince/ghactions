@@ -1,10 +1,11 @@
+name: OWASP ZAP Integration with GitHub Actions
 on:
   schedule:
-    - cron: "24 16 * * *"
+    - cron: "20 16 * * *"
 jobs:
   zap_scan:
     runs-on: ubuntu-latest
-    name: Scan the webapplication
+    name: Scan the BNAC Version-Chu-Tia (CVSS Threat scanning service w/o Heads Up Display - Technical Integration of Applications with ZAP)
     steps:
       - name: Checkout
         uses: actions/checkout@v2
