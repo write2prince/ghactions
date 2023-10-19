@@ -1,7 +1,7 @@
 name: OWASP ZAP Integration with GitHub Actions
-on:
-  schedule:
-    - cron: "20 16 * * *"
+on: [push]
+#   schedule:
+#     - cron: "20 16 * * *"
 jobs:
   zap_scan:
     runs-on: ubuntu-latest
