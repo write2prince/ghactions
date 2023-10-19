@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "20 16 * * *"
+    - cron: "24 16 * * *"
 jobs:
   zap_scan:
     runs-on: ubuntu-latest
